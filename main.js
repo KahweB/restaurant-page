@@ -1,1 +1,1 @@
-(()=>{"use strict";console.log("succesfull matasdfasdasdfeteteasdfasdfdasfa"),console.log("in createcontent()")})();
+(()=>{"use strict";const t=document.querySelector("#home-button"),e=document.querySelector("#food-button"),n=document.querySelector("#contact-button");t.addEventListener("click",(function(){})),e.addEventListener("click",(function(){})),n.addEventListener("click",(function(){}))})();
