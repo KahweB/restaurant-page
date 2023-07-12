@@ -10,5 +10,7 @@ const contactButton = document.querySelector("#contact-button");
 homeButton.addEventListener("click", createHome);
 menuButton.addEventListener("click", createMenu);
 contactButton.addEventListener("click", createContact);
-createHome();
+//createHome();
+//createContact();
+createMenu();
 
