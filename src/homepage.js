@@ -1,6 +1,7 @@
 export default function createHome() {
-    const content = document.querySelector("#content");
 
+    const content = document.querySelector("#content");
+    content.innerHTML = "";
     //home container
     const container = document.createElement("div");
     container.setAttribute("id","home-container");
@@ -14,6 +15,7 @@ export default function createHome() {
     logo.setAttribute("id","logo");
     logo.innerHTML = "Dante Redd";
     const description = document.createElement("div");
+    
     description.setAttribute("id","description");
     description.innerHTML = "It's finger-lickin' good";
 
@@ -27,7 +29,7 @@ export default function createHome() {
     //order now
     const orderNow = document.createElement("div");
     orderNow.setAttribute("id", "order-now");
-    orderNow.innerHTML = "Order Now"
+    orderNow.innerHTML = "Order Now";
     //order logo one
     const orderLogoOne = document.createElement("div");
     orderLogoOne.setAttribute("id","order-logo-one");

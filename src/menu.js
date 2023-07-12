@@ -1,6 +1,6 @@
 export default function createMenu() {
     const content = document.querySelector("#content");
-
+    content.innerHTML = "";
     //menu container
     const menuContainer = document.createElement("div");
     menuContainer.setAttribute("id", "menu-container");
