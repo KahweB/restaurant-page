@@ -59,19 +59,51 @@ body{
 }
 #menu-container > #inner-container {
     display: grid;
-    grid-template-columns: auto auto;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 600px);
     width: 80vw;
     min-width: 20vw;
-    height: 75vh;
-    border-radius: 5%;
+    height: auto;
+    padding: 20px;
+    border-radius: 50px;
     background-color: rgba(0,0,0,0.7);
 }
 .menu-card{
-    background-color: #fa6761;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    
+    color: white;
+    
+}
+.card-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+
+}
+.card-content > h4 {
+    font-family: var(--font_pacifico);
+    text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97998px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.5136px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px;
+    font-size: 30px;
+    color: #fa6761;
+}
+.card-content > p {
+    margin-top: 10px;
+    font-family: var(--font_ubuntu);
+    overflow-wrap: break-word;
+    font-style: italic;
+    font-weight: 800;
 }
 .menu-card > .card-image{
+    flex-shrink: 0;
     width: 200px;
     height: 200px;
+    border: 3px solid;
+    
+    border-image: linear-gradient(180deg, rgb(224, 88, 64), rgb(43, 212, 71)) 1;
     background-color: #000000;
 }
 .menu-card:nth-child(1) >.card-image{
